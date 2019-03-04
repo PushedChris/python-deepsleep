@@ -1,8 +1,5 @@
 import numpy as np
 
-
-
-
 class FeatureAlgorithms:
 
     def simpleLZ(self, X):
