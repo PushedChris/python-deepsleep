@@ -12,6 +12,8 @@ from sklearn import metrics
 from sklearn.metrics import confusion_matrix
 from sklearn import preprocessing
 
+
+
 dataFile = 'CAP-features/CAP001_featureSS.mat'
 matdata = scio.loadmat(dataFile)   # 加载mat文件
 data_feature  = matdata['data_feature']
