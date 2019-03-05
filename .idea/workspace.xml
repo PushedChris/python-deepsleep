@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d64769d-1758-41f6-9c81-ccf02ae1c91e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deepsleep/algorithms/algorithms_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BigSVM.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepsleep/BigSVM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAP模型网格搜索与分类的结果.png" beforeDir="false" afterPath="$PROJECT_DIR$/deepsleep/save_results/CAP模型网格搜索与分类的结果.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LZ.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmodelGrid.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/deepsleep/save_results/bigmodelGrid.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deepsleep_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepsleep/deepsleep_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testMatSvm.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepsleep/testMatSvm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tocsv.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepsleep/tocsv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topickle.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepsleep/topickle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deepsleep/algorithms/algorithms.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepsleep/algorithms/algorithms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deepsleep/testAlgorithms.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepsleep/testAlgorithms.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +17,9 @@
     <SUITE FILE_PATH="coverage/python_deepsleep$test001.coverage" NAME="test001 Coverage Results" MODIFIED="1551354725984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_deepsleep$tocsv.coverage" NAME="tocsv Coverage Results" MODIFIED="1551426992481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_deepsleep$LZ__2_.coverage" NAME="LZ (2) Coverage Results" MODIFIED="1551681592331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/deepsleep/feature_algorithms" />
+    <SUITE FILE_PATH="coverage/python_deepsleep$algorithms.coverage" NAME="algorithms Coverage Results" MODIFIED="1551685694795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/deepsleep/algorithms" />
     <SUITE FILE_PATH="coverage/python_deepsleep$BigSVM.coverage" NAME="BigSVM Coverage Results" MODIFIED="1551443164236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_deepsleep$testAlgorithms.coverage" NAME="testAlgorithms Coverage Results" MODIFIED="1551694838477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/deepsleep" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-452975697">
@@ -43,28 +37,28 @@
           <entry key="csv" value="1" />
           <entry key="pickle" value="3" />
           <entry key="png" value="1" />
-          <entry key="py" value="53" />
+          <entry key="py" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="53" />
+          <entry key="Python" value="63" />
           <entry key="Web2Py" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="453" />
+          <entry key="Python Console" value="465" />
           <entry key="dummy" value="58" />
-          <entry key="py" value="2900" />
+          <entry key="py" value="3832" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="58" />
-          <entry key="Python" value="3353" />
+          <entry key="Python" value="4297" />
         </counts>
       </usages-collector>
     </session>
@@ -72,22 +66,36 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deepsleep/algorithms/algorithms_test.py">
+        <entry file="file://$PROJECT_DIR$/deepsleep/testAlgorithms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="184">
+              <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="42" />
               <folding>
-                <marker date="1551683447742" expanded="true" signature="21:23" ph="..." />
+                <element signature="e#0#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deepsleep/testAlgorithms.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/decomposition/factor_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="402">
+              <caret line="167" column="60" lean-forward="true" selection-start-line="167" selection-start-column="60" selection-end-line="167" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deepsleep/algorithms/algorithms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#554#744#0" />
+                <marker date="1551697500489" expanded="true" signature="87:92" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,7 +140,9 @@
         <option value="$PROJECT_DIR$/deepsleep/feature_algorithms/testAlgorithms.py" />
         <option value="$PROJECT_DIR$/deepsleep/feature_algorithms/LZ.py" />
         <option value="$PROJECT_DIR$/deepsleep/feature_algorithms/FeatureAlgorithms.py" />
+        <option value="$PROJECT_DIR$/deepsleep/algorithms/algorithms_test.py" />
         <option value="$PROJECT_DIR$/deepsleep/testAlgorithms.py" />
+        <option value="$PROJECT_DIR$/deepsleep/algorithms/algorithms.py" />
       </list>
     </option>
   </component>
@@ -142,7 +152,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="521" />
     <option name="y" value="7" />
     <option name="width" value="1621" />
@@ -162,6 +172,17 @@
             <path>
               <item name="python-deepsleep" type="b2602c69:ProjectViewProjectNode" />
               <item name="python-deepsleep" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python-deepsleep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python-deepsleep" type="462c0819:PsiDirectoryNode" />
+              <item name="deepsleep" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python-deepsleep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python-deepsleep" type="462c0819:PsiDirectoryNode" />
+              <item name="deepsleep" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -197,28 +218,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.testAlgorithms">
-    <configuration name="BigSVM" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python-deepsleep" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\mydoc\Learn doc\MachineLearning_learn\python_learn\python_project\python-sleep\python-deepsleep\deepsleep\BigSVM.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="LZ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-deepsleep" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -304,6 +303,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="algorithms" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python-deepsleep" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/deepsleep/algorithms" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deepsleep/algorithms/algorithms.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="testAlgorithms" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-deepsleep" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -324,18 +345,18 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.BigSVM" />
       <item itemvalue="Python.LZ" />
       <item itemvalue="Python.LZ (1)" />
       <item itemvalue="Python.testAlgorithms" />
       <item itemvalue="Python.LZ (2)" />
+      <item itemvalue="Python.algorithms" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.testAlgorithms" />
-        <item itemvalue="Python.LZ" />
-        <item itemvalue="Python.LZ" />
-        <item itemvalue="Python.LZ (2)" />
+        <item itemvalue="Python.testAlgorithms" />
+        <item itemvalue="Python.testAlgorithms" />
+        <item itemvalue="Python.testAlgorithms" />
         <item itemvalue="Python.testAlgorithms" />
       </list>
     </recent_temporary>
@@ -363,9 +384,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="521" y="7" width="1621" height="1407" extended-state="1" />
+    <frame x="521" y="7" width="1621" height="1407" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21076234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21076234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -380,13 +402,13 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500295" side_tool="true" weight="0.39951962" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32932693" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49970502" visible="true" weight="0.39903846" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.49970502" visible="true" weight="0.39903846" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="810" y="181" width="984" height="798" id="SciView" order="3" sideWeight="0.4974359" type="WINDOWED" weight="0.5162242" />
+      <window_info anchor="right" x="1566" y="90" width="984" height="798" id="SciView" order="3" sideWeight="0.4974359" type="WINDOWED" visible="true" weight="0.5162242" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" x="0" y="0" width="338" height="1207" id="Documentation" order="5" sideWeight="0.50256413" side_tool="true" visible="true" weight="0.23318386" />
+      <window_info anchor="right" x="0" y="0" width="338" height="1207" id="Documentation" order="5" sideWeight="0.50256413" side_tool="true" weight="0.24151185" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21076234" />
@@ -473,23 +495,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataset.csv" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/preprocessing/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="201" column="52" lean-forward="true" selection-start-line="201" selection-start-column="52" selection-end-line="201" selection-end-column="52" />
-          <folding>
-            <element signature="e#7519#10013#1" />
-            <element signature="e#10080#10139#0" />
-            <element signature="e#10171#10621#0" />
-            <element signature="e#10661#11070#0" />
-            <element signature="e#11118#13010#0" />
-            <element signature="e#13048#13478#0" />
-            <element signature="e#13524#13975#0" />
-            <element signature="e#14044#16259#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/preprocessing/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -513,20 +518,6 @@
             <element signature="e#25#44#0" expanded="true" />
             <element signature="e#336#963#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1974117419/numpy/core/multiarray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1974117419/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="4163" column="62" lean-forward="true" selection-start-line="4163" selection-start-column="62" selection-end-line="4163" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -590,13 +581,6 @@
     <entry file="file://$PROJECT_DIR$/feature_algorrthms/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="308" selection-start-line="308" selection-end-line="308" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deepsleep/BigSVM.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -618,20 +602,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deepsleep/algorithms/algorithms_test.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="333">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1974117419/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="3748" column="63" lean-forward="true" selection-start-line="3748" selection-start-column="63" selection-end-line="3748" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/preprocessing/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="1689" column="28" selection-start-line="1689" selection-start-column="20" selection-end-line="1689" selection-end-column="28" />
           <folding>
-            <marker date="1551683447742" expanded="true" signature="21:23" ph="..." />
+            <element signature="e#7519#10013#1" />
+            <element signature="e#10080#10139#0" />
+            <element signature="e#10171#10621#0" />
+            <element signature="e#10661#11070#0" />
+            <element signature="e#11118#13010#0" />
+            <element signature="e#13048#13478#0" />
+            <element signature="e#13524#13975#0" />
+            <element signature="e#14044#16259#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/numpy/core/arrayprint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="1419" column="4" selection-start-line="1419" selection-start-column="4" selection-end-line="1419" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1974117419/numpy/core/multiarray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="2355" column="18" lean-forward="true" selection-start-line="2355" selection-start-column="18" selection-end-line="2355" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/decomposition/factor_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="167" column="60" lean-forward="true" selection-start-line="167" selection-start-column="60" selection-end-line="167" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deepsleep/testAlgorithms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deepsleep/algorithms/algorithms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#554#744#0" />
+            <marker date="1551697500489" expanded="true" signature="87:92" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
