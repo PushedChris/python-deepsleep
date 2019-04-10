@@ -1,5 +1,5 @@
 """
-用CAP和XN所有人训练集进行SVM训练一个大模型
+用CAP和XN 相互测试
 
 """
 import pandas as pd
@@ -37,10 +37,10 @@ X = np.zeros([0,0])
 y = np.zeros([0,0])
 
 # 选取数据源
-# for u in range(1, 14):
-#     X, y = readcsvData(u, X, y, setname='CAP')
-for u in range(4, 13):  #加载XN数据集
-    X, y = readcsvData(u, X, y, setname='XN')
+for u in range(1, 14):
+    X, y = readcsvData(u, X, y, setname='CAP')
+# for u in range(1, 13):  #加载XN数据集
+#     X, y = readcsvData(u, X, y, setname='XN')
 
 # 构造SVM分类器
 # bigmodel = SVC(kernel='rbf',  class_weight='balanced')
@@ -51,7 +51,7 @@ for u in range(4, 13):  #加载XN数据集
 start=time.time()
 
 # 加载之前训练好的模型
-file = open('save_results/bigmodelGrid.pickle', 'rb')
+file = open('save_results/singleXN_Model.pickle', 'rb')
 bigmodelGrid = pickle.load(file)
 file.close()
 # bigmodelGrid = GridSearchCV(bigmodel, param_grid, cv=5, n_jobs=13)  #找到最好的超参数
